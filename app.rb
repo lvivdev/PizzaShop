@@ -21,11 +21,3 @@ end
 get '/about' do
 	erb :about
 end
-
-get '/orders' do
-  erb :orders
-end
-
-get '/contacts' do
-  erb :contacts
-end
