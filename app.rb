@@ -19,7 +19,7 @@ get '/cart' do
 end
 
 post '/cart' do
-	erb "hello!"
+	erb :cart
 end
 
 get '/about' do
