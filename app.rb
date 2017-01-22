@@ -14,6 +14,10 @@ get '/' do
 	erb :index
 end
 
+get '/cart' do
+	erb :cart
+end
+
 post '/cart' do
 	erb "hello!"
 end
