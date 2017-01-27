@@ -1,13 +1,14 @@
-function something () 
-{
-	var x = window.localStorage.getItem('bb');
-	x = x * 1 + 1;
+// function something () 
+// {
+// 	var x = window.localStorage.getItem('bb');
+// 	x = x * 1 + 1;
 
-	window.localStorage.setItem('bb', x);
+// 	window.localStorage.setItem('bb', x);
 
-	alert(x);
-}
+// 	alert(x);
+// }
 
+//Добавляем товар в корзину 
 function add_to_cart(id)
 {
 	var key = 'product_' + id;
@@ -15,7 +16,7 @@ function add_to_cart(id)
 	var x = window.localStorage.getItem(key);
 	x = x * 1 + 1;
 	window.localStorage.setItem(key, x);
-
+	// Обновление кнопки меню
 	update_orders_input();
 	update_orders_button();	
 }
