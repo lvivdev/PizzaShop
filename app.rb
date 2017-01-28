@@ -42,6 +42,7 @@ post '/cart' do
 end
 
 get '/admin' do
+	@all_orders = Order.all
 	erb :admin
 end
 
